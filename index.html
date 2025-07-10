@@ -32,13 +32,14 @@
   <body>
     <model-viewer
       src="helmet-1.glb"
-      ios-src="helmet-1.glb"
+      ios-src="helmet-1.usdz"
       ar
-      ar-modes="webxr scene-viewer quick-look"
+      ar-modes="scene-viewer quick-look webxr"
       camera-controls
       auto-rotate
       alt="3D model of helmet sculpture">
-    </model-viewer>
+</model-viewer>
+
     <button id="ar-button" slot="ar-button" onclick="document.querySelector('model-viewer').activateAR()">View in AR</button>
   </body>
 </html>
